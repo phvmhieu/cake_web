@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.header {
+  background-color: #fcf2e9;
+}
+.header__menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu-list ul {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+.header__menu-list ul li a {
+  margin-right: 30px;
+  font-weight: 600;
+  color: #af9280;
+  align-items: center;
+  font-size: 18px;
+}
+
+.header__menu-input {
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.header__menu-input {
+  position: relative;
+}
+
+.header__menu-input .input__text {
+  height: 50px;
+  width: 300px;
+  border-radius: 45px;
+  border: 1px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header__menu-input i {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 10px 20px;
+  background-color: #807670;
+  border-radius: 45px;
+  color: #fff;
+}
+
+.header__content {
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.header__content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__content-decs h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 900;
+  font-size: 70px;
+  text-align: center;
+  color: #473F3A;
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+
+.header__content-decs button {  
+  
+  margin-left: 200px;
+  padding: 10px 40px;
+  background-color: #FF8D26;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
