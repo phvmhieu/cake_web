@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 .header {
-  background-color: #fcf2e9;
+  background-image: linear-gradient(to right, #fcf2e9, #FFFFFF);
 }
 .header__menu-container {
   display: flex;
@@ -9,21 +9,22 @@
 
 .header__menu-list ul {
   display: flex;
-  margin-top: 30px;
-  margin-left: 200px;
+  margin-top: 50px;
+  margin-left: 100px;
 }
 
 .header__menu-list ul li a {
   margin-right: 30px;
-  font-weight: 600;
+  font-weight: 700;
   color: #af9280;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .header__menu-input {
-  margin-right: 30px;
-  margin-top: 20px;
+  margin: auto;
 }
 
 .header__menu-input {
@@ -31,21 +32,40 @@
 }
 
 .header__menu-input .input__text {
-  height: 50px;
-  width: 300px;
+  height: 36px;
+  width: 242px;
   border-radius: 45px;
-  border: 1px solid #000;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 3px solid #6E635C;
 }
 
 .header__menu-input i {
   position: absolute;
-  top: 7px;
-  right: 7px;
+  top: 5px;
+  right: 5px;
   padding: 10px 20px;
-  background-color: #807670;
+  background-color: #AF9280;
   border-radius: 45px;
   color: #fff;
+  line-height: 7px;
+}
+
+/* .header__menu-cart {
+  margin: auto;
+} */
+
+.header__menu-cart i {
+  position: absolute;
+  top: 46px;
+  right: 150px;
+  font-size: 28px;
+}
+
+.header__menu-user i {
+  position: absolute;
+  top: 46px;
+  right: 20px;
+  /* width: 100px; */
+  font-size: 28px;
 }
 
 .header__content {
@@ -61,7 +81,7 @@
 .header__content-decs h1 {
   font-family: "Libre Baskerville", serif;
   font-weight: 900;
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
   color: #473F3A;
   margin-left: 100px;
