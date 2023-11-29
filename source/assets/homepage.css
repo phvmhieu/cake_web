@@ -1,0 +1,52 @@
+.header__midle-content {
+    background-image: linear-gradient(to right, #FFFFFF, #fcf2e9);
+    
+}
+
+.outstanding-products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    border-top: 50px;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.outstanding-products__title {
+    margin: 15px;
+    
+}
+
+.outstanding-products__title h1 {
+    color: #473F3A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.outstanding-products__box {
+    width: 3px; /* Độ rộng của hộp */
+    height: 150px; /* Chiều cao của hộp */
+    background-color: #000; /* Màu nền của hộp */
+    border: 1px solid #000; /* Viền của hộp */
+    opacity: 0.5;
+}
+
+.outstanding-products__meaning {
+    margin: 20px;
+}
+
+.outstanding-products__meaning p {
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
