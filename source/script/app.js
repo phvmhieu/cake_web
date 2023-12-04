@@ -5,9 +5,9 @@ $(document).ready(function () {
       infinite: true,
       arrows: true,
       draggable: false,
-      prevArrow: `<button type='button' class='slick-prev slick-arrow'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
-      nextArrow: `<button type='button' class='slick-next slick-arrow'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
-      dots: true,
+      prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left" style="color: #AF9280"></i></button>`,
+      nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right" style="color: #AF9280"></i></button>`,
+      // dots: true,
       responsive: [
         {
           breakpoint: 1025,
@@ -28,3 +28,4 @@ $(document).ready(function () {
       // autoplaySpeed: 1000,
     });
   });
+

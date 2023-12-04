@@ -1,6 +1,7 @@
 .header__midle-content {
+    line-height: 1.5;
     background-image: linear-gradient(to right, #FFFFFF, #fcf2e9);
-    
+    padding-bottom: 100px;
 }
 
 img {
@@ -70,24 +71,24 @@ img {
 }
 
 .image-slider {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    
+    /* grid-template-columns: repeat(8, 1fr);
     grid-gap: 20px;
     margin-top: 20px;
     margin-bottom: auto;
-    align-items: center;
+    align-items: center; */
 }
 
 .image {
 
     
     display: block;
+  
     width: 200px;
-    height: 285px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     background-color: #CFCFCF;
-    
     border-radius: 40px;
     backdrop-filter: blur(10px);
     padding: 20px;
@@ -96,12 +97,10 @@ img {
 .image img {
     
     position: absolute;
-    width: 100%px;
+    width: 100%;
     height: 100%;
     right: 10px;
     bottom: 10px;
-    width: 100%;
-    height: 100%;
     align-self: center;
     object-fit: cover;
     
@@ -123,9 +122,10 @@ img {
 
 .slick-initialized .slick-slide {
     margin: 0 10px;
-  }
-  .slick-arrow {
+}
+.slick-arrow {
     position: absolute;
+    background-color: transparent;
     top: 50%;
     transform: translateY(-50%);
     border: none;
@@ -138,12 +138,12 @@ img {
     line-height: 1;
     z-index: 5;
     transition: all 0.2s linear;
-  }
-  .slick-arrow:hover {
-    background-color: #2cccff;
+}
+.slick-arrow:hover {
+    background-color: #FFF6E5;
     color: white;
-  }
-  .slick-prev {
+}
+.slick-prev {
     left: 0;
   }
   .slick-next {
@@ -164,11 +164,44 @@ img {
     width: 15px;
     height: 15px;
     border-radius: 100rem;
-    background-color: #eee;
+    /* background-color: #000; */
     border: none;
     outline: none;
     transition: all 0.2s linear;
   }
   .slick-dots .slick-active button {
-    background-color: #2cccff;
+    background-color: #FFF6E5;
   }
+
+.header__midle-content-second {
+  
+  position: relative;
+  height: 750px;
+  
+}
+
+.display-image img {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+.display-image-box {
+  position: absolute;
+  width: auto;
+  height: 900px;
+  background-color: #FFF6E5;
+  z-index: 1; /* Đặt giá trị z-index lớn hơn ảnh */
+}
+
+.display-image-title {
+  position: absolute;
+  text-align: center
+  
+}
+
+.display-image-title h1 {
+  padding: 280px;
+  color: #FCF2E9;
+  font-family: 'Bona Nova', serif;
+}
