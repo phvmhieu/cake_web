@@ -43,7 +43,7 @@
       crossorigin="anonymous"
     ></script>
     
-    <title>PASTRIES</title>
+    <title>BREAD</title>
   </head>
   <body>
     <header class="header">
@@ -83,15 +83,15 @@
             src="assets/img/orange-cake-decorated-with-fresh-orange-slices-mimosa-flowers-light 1.png"
             alt=""
           /></a>
-          <a href="product.html"><h5 style="
-            text-decoration: underline;
-            text-decoration-color: #FF8D26;
-            text-decoration-thickness: 3px;">
-            PASTRIES</h5></a>
+          <a href="product.html"><h5>PASTRIES</h5></a>
         </div>
         <div class="nav__products-image">
           <a href="BREAD.html"><img src="assets/img/fresh-bread.png" alt="" /></a>
-          <a href="BREAD.html"><h5>BREAD</h5></a>
+          <a href="BREAD.html"><h5 style="
+            text-decoration: underline;
+            text-decoration-color: #FF8D26;
+            text-decoration-thickness: 3px;">
+            BREAD</h5></a>
         </div>
         <div class="nav__products-image">
           <a href="COOKIES.html"><img
@@ -117,44 +117,89 @@
     <div class="list-products">
       <div class="list-products-one">
         <div class="list-products-item">
-          <img src="assets/img/item1.png" alt="" />
-          <h5>CROISSANT PHÔ MAI</h5>
-          <p>45.000Đ</p>
+          <img src="assets/img/img-product/MILK-TOAST.PNG" alt="MILK TOAST" />
+          <h5>MILK TOAST</h5>
+          <p>50.000Đ</p>
           <button>Thêm vào giỏ hàng</button>
         </div>
         <div class="list-products-item">
-          <img src="assets/img/item2.png" alt="" />
-          <h5>DANISH</h5>
-          <p>40.000Đ</p>
+          <img src="assets/img/img-product/GRAIN-TOAST.PNG" alt="GRAIN TOAST" />
+          <h5>GRAIN TOAST</h5>
+          <p>55.000Đ</p>
           <button>Thêm vào giỏ hàng</button>
         </div>
         <div class="list-products-item">
-          <img src="assets/img/item3.png" alt="" />
-          <h5>ÉCLAIRS</h5>
+          <img src="assets/img/img-product/CHOCO-BREAD.PNG" alt="CHOCO BREAD" />
+          <h5>CHOCO BREAD</h5>
           <p>50.000Đ</p>
           <button>Thêm vào giỏ hàng</button>
         </div>
       </div>
 
+      <style>
+        .list-products-two {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr)
+            
+            
+        }
+
+        .list-products-item-one {
+            border: 1px solid #000;
+            height: 360px;
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-right: 190px;
+        }
+        .list-products-item-one h5 {
+            color: #6e635c;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            
+        }
+          
+        .list-products-item-one p {
+            color: #ff8d26;
+            margin-left: -105px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+          
+        .list-products-item-one button {
+            border-radius: 45px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ff8d26;
+            font-size: 16px;
+        }
+        
+        .list-products-item-one img {
+            height: 150px;
+            width: auto;
+        }
+      </style>
+
       <div class="list-products-two">
-        <div class="list-products-item">
-          <img src="assets/img/item4.png" alt="" />
-          <h5>DANISH DÂU RỪNG</h5>
-          <p>45.000Đ</p>
+        <div class="list-products-item-one">
+          <img src="assets/img/img-product/CREAM-BREAD.PNG" alt="CREAM BREAD" />
+          <h5>CREAM BREAD</h5>
+          <p>50.000Đ</p>
           <button>Thêm vào giỏ hàng</button>
         </div>
         <div class="list-products-item">
-          <img src="assets/img/item5.png" alt="" />
-          <h5>BRIOCHE</h5>
+          <img src="assets/img/img-product/GRAIN-BREAD.PNG" alt="GRAIN BREAD" />
+          <h5>GRAIN BREAD</h5>
           <p>45.000Đ</p>
           <button>Thêm vào giỏ hàng</button>
         </div>
-        <div class="list-products-item">
-          <img src="assets/img/item6.png" alt="" />
-          <h5>FRUIT TART MIX</h5>
-          <p>45.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
-        </div>
+        
       </div>
     </div>
     <footer class="footer">

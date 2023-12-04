@@ -12,7 +12,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(to right, #fcf2e9, #FFFFFF);
+  background-image: linear-gradient(to right, #fcf2e9, #FCF3EA, #FFFFFF);
   transition: all 0.5s ease-in-out;
 }
 
@@ -99,7 +99,7 @@ header.sticky {
 
 .header__content {
   padding-bottom: 60px;
-  background-image: linear-gradient(to right, #fcf2e9, #FFFFFF);
+  background-image: linear-gradient(to right, #fcf2e9, #FCF3EA, #FFFFFF);
 }
 
 .header__content-container {
@@ -138,8 +138,9 @@ header.sticky {
   display: flex;
   position: relative;
   background-color: #FCF2E9;
+  padding-top: 30px;
   padding: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 40px;
   padding-left: 30px;
   bottom: 0;
   justify-content: space-between;
