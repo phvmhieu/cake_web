@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="assets/homepage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="assets/index.css" />
+    <link rel="stylesheet" href="assets/homepage.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
       integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
@@ -52,7 +59,7 @@
           <div class="header__menu-list">
             <ul>
               <li><a href="#">TRANG CHỦ</a></li>
-              <li><a href="#">SẢN PHẨM</a></li>
+              <li><a href="product.html">SẢN PHẨM</a></li>
               <li><a href="#">VỀ CHÚNG TÔI</a></li>
             </ul>
           </div>
@@ -100,73 +107,81 @@
         </div>
         <div class="outstanding-products__meaning">
           <p class="meaning">
-            Đây là những sản phẩm tốt nhất của chúng tôi mà mọi<br>
-            người đều yêu thích. Vị nhẹ nhàng và ngọt ngào của chiếc<br>
-            bánh khiến bạn càng muốn ăn thêm. Bắt đầu từ bánh<br>
+            Đây là những sản phẩm tốt nhất của chúng tôi mà mọi 
+            người đều yêu thích. Vị nhẹ nhàng và ngọt ngào của chiếc
+            bánh khiến bạn càng muốn ăn thêm. Bắt đầu từ bánh 
             ngọt, bánh mì và những sản phẩm khác.
           </p>
         </div>
       </div>
-      <div class="content-product">
-        <div id="slide">
-          <div class="item" style="background-image: url(assets/img/croissant.PNG);">
-            <div class="content">
-              <div class="name">CROISSANT</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+      <div class="image-slider">
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/croissant.PNG" alt="croissant">
           </div>
-          <div class="item" style="background-image: url(assets/img/baguette.PNG);">
-            <div class="content">
-              <div class="name">BAGUETTE</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">CROISSANT</h3>
+        </div>
+        
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/baguette.PNG" alt="baguette">
           </div>
-          <div class="item" style="background-image: url(assets/img/cookies.PNG);">
-            <div class="content">
-              <div class="name">COOKIES</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">BAGUETTE</h3>
+        </div>
+
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/cookies.PNG" alt="cookies">
           </div>
-          <div class="item" style="background-image: url(assets/img/eclairs.PNG);">
-            <div class="content">
-              <div class="name">ÉCLAIRS</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">COOKIES</h3>
+        </div>
+
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/eclairs.PNG" alt="eclairs">
           </div>
-          <div class="item" style="background-image: url(assets/img/macaron.PNG);">
-            <div class="content">
-              <div class="name">MACARON</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">ÉCLAIRS</h3>
+        </div>
+
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/macaron.PNG" alt="macaron">
           </div>
-          <div class="item" style="background-image: url(assets/img/madeleine.PNG);">
-            <div class="content">
-              <div class="name">MADELEINE</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">MACARON</h3>
+        </div>
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/madeleine.PNG" alt="madeleine">
           </div>
-          <div class="item" style="background-image: url(assets/img/cupcake.PNG);">
-            <div class="content">
-              <div class="name">CUPCAKE</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">MADELEINE</h3>
+        </div>
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/cupcake.PNG" alt="cupcake">
           </div>
-          <div class="item" style="background-image: url(assets/img/crepe.PNG);">
-            <div class="content">
-              <div class="name">CREPE</div>
-              <div class="des"></div>
-              <button>Se more</button>
-            </div>
+          <h3 class="image-title">CUPCAKE</h3>
+        </div>
+
+        <div class="image-item">
+          <div class="image">
+            <img src="assets/img/crepe.PNG" alt="crepe">
           </div>
+          <h3 class="image-title">CREPE</h3>
         </div>
       </div>
+      
+      <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
     </div>
     <footer class="footer">
       <div class="footer__logo">
@@ -205,6 +220,18 @@
           </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./script/app.js"></script>
   </body>
 </html>
