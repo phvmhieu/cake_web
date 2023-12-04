@@ -1,0 +1,148 @@
+*{
+    max-width: 2000px;
+}
+
+.circle-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-section1 {
+    position: absolute;
+    top: -600px;
+    left: -300px;
+    width: 1200px;
+    height: 1200px;
+    
+    flex-shrink: 0; 
+    border-radius: 1200px;
+    background: rgba(252, 243, 234, 0.50)
+
+    /* background: rgba(250, 243, 237, 0.70); */
+}
+
+.circle-section2 {
+    position: absolute;
+    top: -600px;
+    left: 600px;
+    width: 1200px;
+    height: 1200px;
+    
+    flex-shrink: 0; 
+    border-radius: 1200px;
+    background: rgba(252, 243, 234, 0.50)
+
+}
+
+.circle-section3 {
+    position: absolute;
+    top: 300px;
+    left: -300px;
+    width: 1200px;
+    height: 1200px;
+    
+    flex-shrink: 0; 
+    border-radius: 1200px;
+    background: rgba(252, 243, 234, 0.50)
+} 
+
+.circle-section4 {
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    width: 1200px;
+    height: 1200px;
+    
+    flex-shrink: 0; 
+    border-radius: 1200px;
+    background: rgba(252, 243, 234, 0.50)
+}
+
+.ellipse {
+    left: 350px;
+    top: 150px;
+    position: absolute;
+    width: 766px;
+    height: 550px;
+    background: rgba(252, 243, 234, 0.70);
+    border-radius: 50%;
+}
+
+.ellipse img {
+    width: 600px;
+}
+
+.ellipse {
+    padding: 150px;
+    padding-left: 120px;
+    padding-top: 160px;
+}
+
+.back-ground-image img {
+    width: 1481px;
+}
+
+.about-us {
+    display: flex;
+    z-index: 90;
+    background: rgba(255, 253, 252, 0.70);
+}
+
+.list-about {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-about-image {
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-about-image img {
+    width: 287.989px;
+    flex-shrink: 0;
+}
+
+.list-about-box {
+    margin-top: 10px;
+    width: 264.017px;
+    height: 2px;
+    background: rgba(110, 99, 92, 0.70);
+}
+
+.list-about-descripton {
+    padding-top: 30px;
+    padding: 70px;
+}
+
+.list-about-title h2 {
+    color: #6E635C;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.list-about-descripton p {
+    color: #6E635C;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.lay-out-final-background img {
+    width: 1480px;
+    height: 688px;
+    flex-shrink: 0;
+}

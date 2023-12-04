@@ -82,6 +82,12 @@
     justify-content: space-around;
   }
   
+  .list-products-three {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
   .list-products-item {
     border: 1px solid #000;
     height: 360px;
