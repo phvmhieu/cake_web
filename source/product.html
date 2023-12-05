@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/index.css">
     <link rel="stylesheet" href="assets/product.css" />
+    <link rel="stylesheet" href="assets/cart.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link
         rel="stylesheet"
@@ -47,7 +48,7 @@
   </head>
   <body>
     <header class="header">
-        <a href="#">
+        <a href="index.html">
           <img
           src="assets/img/t3-01 1.png"
           alt="GÂTEAUX"
@@ -66,97 +67,131 @@
           <input class="input__text" type="text"/>
           <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
         </div>
-        <div class="header__menu-cart">
+        <!-- <div class="header__menu-cart">
           <i class="fa-solid fa-cart-shopping" style="color: #6e635c;"></i>
-        </div>
+          
+        </div> -->
         <div class="header__menu-user">
           <i class="fa-regular fa-circle-user" style="color: #6e635c;"></i>
         </div>
   </header>
-    <div class="nav__products">
-      <div class="nav__products-title">
-        <h1>CHỌN LOẠI BÁNH YÊU THÍCH</h1>
-      </div>
-      <div class="nav__products-item">
-        <div class="nav__products-image">
-          <a href="product.html"><img
-            src="assets/img/orange-cake-decorated-with-fresh-orange-slices-mimosa-flowers-light 1.png"
-            alt=""
-          /></a>
-          <a href="product.html"><h5 style="
-            text-decoration: underline;
-            text-decoration-color: #FF8D26;
-            text-decoration-thickness: 3px;">
-            PASTRIES</h5></a>
+    
+      <div class="body-product">
+        <div class="nav__products">
+          <div class="nav__products-title">
+            <h1>CHỌN LOẠI BÁNH YÊU THÍCH</h1>
+          </div>
+          <div class="nav__products-item">
+            <div class="nav__products-image">
+              <a href="product.html"><img
+                src="assets/img/orange-cake-decorated-with-fresh-orange-slices-mimosa-flowers-light 1.png"
+                alt=""
+              /></a>
+              <a href="product.html"><h5 style="
+                text-decoration: underline;
+                text-decoration-color: #FF8D26;
+                text-decoration-thickness: 3px;">
+                PASTRIES</h5></a>
+            </div>
+            <div class="nav__products-image">
+              <a href="BREAD.html"><img src="assets/img/fresh-bread.png" alt="" /></a>
+              <a href="BREAD.html"><h5>BREAD</h5></a>
+            </div>
+            <div class="nav__products-image">
+              <a href="COOKIES.html"><img
+                src="assets/img/chocolate-chip-cookies-isolated-white-background-ai-generative.png"
+                alt=""
+              /></a>
+              <a href="COOKIES.html"><h5>COOKIES</h5></a>
+            </div>
+            <div class="nav__products-image">
+              <a href="CAKES.html"><img
+                src="assets/img/jasmine-bartel-8LtrMQfeDkQ-unsplash 2.png"
+                alt=""
+              /></a>
+              <a href="CAKES.html"><h5>CAKES</h5></a>
+            </div>
+            <div class="nav__products-image">
+              <a href="DONUTS.html"><img src="assets/img/unsplash_aFMylf801v0.png" alt="" /></a>
+              <a href="DONUTS.html"><h5>DONUTS</h5></a>
+            </div>
+          </div>
         </div>
-        <div class="nav__products-image">
-          <a href="BREAD.html"><img src="assets/img/fresh-bread.png" alt="" /></a>
-          <a href="BREAD.html"><h5>BREAD</h5></a>
-        </div>
-        <div class="nav__products-image">
-          <a href="COOKIES.html"><img
-            src="assets/img/chocolate-chip-cookies-isolated-white-background-ai-generative.png"
-            alt=""
-          /></a>
-          <a href="COOKIES.html"><h5>COOKIES</h5></a>
-        </div>
-        <div class="nav__products-image">
-          <a href="CAKES.html"><img
-            src="assets/img/jasmine-bartel-8LtrMQfeDkQ-unsplash 2.png"
-            alt=""
-          /></a>
-          <a href="CAKES.html"><h5>CAKES</h5></a>
-        </div>
-        <div class="nav__products-image">
-          <a href="DONUTS.html"><img src="assets/img/unsplash_aFMylf801v0.png" alt="" /></a>
-          <a href="DONUTS.html"><h5>DONUTS</h5></a>
-        </div>
-      </div>
-    </div>
+      <div class="cart-product-container">
+        <div class="list-products">
+          <div class="list-products-one">
+            <div class="list-products-item" data-key="CROISSANTPHOMAI">
+              <img src="assets/img/item1.png" alt="" />
+              <h5>CROISSANT PHÔ MAI</h5>
+              <p class="price">45.000Đ</p>
+              <input type="number" class="count" min="1" value="1">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="remove" onclick="Remove('CROISSANTPHOMAI')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="list-products-item" data-key="DANISH">
+              <img src="assets/img/item2.png" alt="" />
+              <h5>DANISH</h5>
+              <p class="price">40.000Đ</p>
+              <input type="number" class="count" min="1" value="1">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="remove" onclick="Remove('DANISH')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="list-products-item" data-key="ECLAIRS">
+              <img src="assets/img/item3.png" alt="" />
+              <h5>ÉCLAIRS</h5>
+              <p class="price">50.000Đ</p>
+              <input type="number" class="count" min="1" value="1">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="remove" onclick="Remove('ECLAIRS')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+          </div>
 
-    <div class="list-products">
-      <div class="list-products-one">
-        <div class="list-products-item">
-          <img src="assets/img/item1.png" alt="" />
-          <h5>CROISSANT PHÔ MAI</h5>
-          <p>45.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
+          <div class="list-products-two">
+            <div class="list-products-item" data-key="DANISH-DAU-RUNG">
+              <img src="assets/img/item4.png" alt="" />
+              <h5>DANISH DÂU RỪNG</h5>
+              <p class="price">45.000Đ</p>
+              <input type="number" class="count" min="1" value="1">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="remove" onclick="Remove('DANISH-DAU-RUNG')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="list-products-item" data-key="BRIOCHE">
+              <img src="assets/img/item5.png" alt="" />
+              <h5>BRIOCHE</h5>
+              <p class="price">45.000Đ</p>
+              <input type="number" class="count" min="1" value="1">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="remove" onclick="Remove('BRIOCHE')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <div class="list-products-item" data-key="FRUIT-TART-MIX">
+              <img src="assets/img/item6.png" alt="" />
+              <h5>FRUIT TART MIX</h5>
+              <p class="price">45.000Đ</p>
+              <input type="number" class="count" min="1" value="1">
+              <button class="add">Thêm vào giỏ hàng</button>
+              <button class="remove" onclick="Remove('FRUIT-TART-MIX')"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+          </div>
         </div>
-        <div class="list-products-item">
-          <img src="assets/img/item2.png" alt="" />
-          <h5>DANISH</h5>
-          <p>40.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
+
+        <div class="cart">
+          <div class="name">CART</div>
+          <div class="listCart">
+  
+          </div>
         </div>
-        <div class="list-products-item">
-          <img src="assets/img/item3.png" alt="" />
-          <h5>ÉCLAIRS</h5>
-          <p>50.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
-        </div>
+
       </div>
 
-      <div class="list-products-two">
-        <div class="list-products-item">
-          <img src="assets/img/item4.png" alt="" />
-          <h5>DANISH DÂU RỪNG</h5>
-          <p>45.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
-        </div>
-        <div class="list-products-item">
-          <img src="assets/img/item5.png" alt="" />
-          <h5>BRIOCHE</h5>
-          <p>45.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
-        </div>
-        <div class="list-products-item">
-          <img src="assets/img/item6.png" alt="" />
-          <h5>FRUIT TART MIX</h5>
-          <p>45.000Đ</p>
-          <button>Thêm vào giỏ hàng</button>
-        </div>
-      </div>
+      
     </div>
+    
+
+
+    </div>
+    
+
+
     <footer class="footer">
         <div class="footer__logo">
           <a href="#">
@@ -194,5 +229,6 @@
           </div>
       </div>
     </footer>
+    <script src="./script/cart.js"></script>
   </body>
 </html>
